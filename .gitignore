@@ -1,0 +1,14 @@
+# generated files
+bin/
+gen/
+
+.settings/
+
+assets/
+
+.classpath
+.project
+proguard-project.txt
+project.properties
+
+

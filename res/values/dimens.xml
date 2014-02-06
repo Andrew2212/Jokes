@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimens for activity formatting -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_margin">8dp</dimen>
+    <dimen name="dp_four">4dp</dimen>
+
+    <!-- Dimens for text size -->
+    <dimen name="text_dp_twelve">12dp</dimen>
+    <dimen name="text_dp_sixteen">16dp</dimen>
+    <dimen name="text_size_important">24sp</dimen>
+
+</resources>

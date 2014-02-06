@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jokes</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Button -->
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_jokes_from_site">from site</string>
+    <string name="btn_jokes_from_storage">from storage</string>
+    <string name="btn_page_next">Next page</string>
+    <string name="btn_page_prev">Prev. page</string>
+    <string name="btn_go_to_site">Jokes www.semechki.tv</string>
+    <string name="btn_complain">Complain about the Jokes</string>
+    <string name="btn_preferences">Settings</string>
+
+    <!-- Context Menu Strings -->
+    <string name="menu_ctx_save_to_storage">Save to Storage</string>
+    <string name="menu_ctx_delete_from_storage">Delete from Storage</string>
+    <string name="menu_ctx_send_as_sms">Send as SMS</string>
+
+    <!-- Screen Strings -->
+    <string name="screen_home_greeting">Some new jokes every day!</string>
+    <string name="screen_jokes_storage">Storage</string>
+    <string name="screen_jokes_site">Site page</string>
+    <string name="textview_item_number">#12345</string>
+    <string name="textview_item_text">There might be some joke from parsed site</string>
+
+    <!-- Toast string -->
+    <string name="toast_connection_is_absent">Connection is absent!</string>
+    <string name="toast_storage_is_empty">Storage is empty!</string>
+    <string name="toast_something_wrong">Something wrong has happened!</string>
+
+    <!-- Preferences -->
+    <!-- CheckBox -->
+    <string name="pref_sound_key">Sound key</string>
+    <string name="pref_sound_title">Sound</string>
+    <string name="pref_sound_summOn">Sound ON</string>
+    <string name="pref_sound_summOff">Sound OFF</string>
+    <!--  -->
+    <string name="pref_toast_key">Toast key</string>
+    <string name="pref_toast_title">Toast</string>
+    <string name="pref_toast_summOn">Toast show ON</string>
+    <string name="pref_toast_summOff">Toast show OFF</string>
+    <!--  -->
+    <string name="pref_font_size_key">Font size key</string>
+    <string name="pref_font_size_value">18</string>
+    <string name="pref_font_size_summary">Set font size</string>
+    <string name="pref_font_size_title">Font size</string>
+    <!--  -->
+    <string name="pref_delta_key">Delta key</string>
+    <string name="pref_delta_value">1</string>
+    <string name="pref_delta_summary">Set N - step for pages change</string>
+    <string name="pref_delta_title">Step over N pages</string>
+    <!--  -->
+    <string name="pref_color_key">Color key</string>
+    <string name="pref_color_summary">Pick color for joke text</string>
+    <string name="pref_color_title">Font color</string>
+
+    <!-- Dialog message string -->
+    <string name="dialog_msg_item_delete">This joke will be removed.</string>
+    <string name="dialog_msg_do_you_want_to_continue">Do you want to continue?</string>
+    <string name="dialog_msg_progress_bar_message">Let\&apos;s wait</string>
+
+    <!-- Content Descritions -->
+    <string name="ing_content_descripton">Content Description</string>
+
+</resources>

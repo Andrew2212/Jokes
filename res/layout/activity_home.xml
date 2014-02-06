@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lt_HomeBase"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".HomeActivity" >
+
+    <TextView
+        android:id="@+id/tv_HomeGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/screen_home_greeting"
+        android:textColor="@color/green"
+        android:textSize="@dimen/text_size_important" />
+
+    <ImageView
+        android:id="@+id/img_HomeSeed"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_margin="@dimen/activity_margin"
+        android:layout_weight="1"
+        android:contentDescription="@string/ing_content_descripton"
+        android:src="@drawable/seed" />
+
+    <Button
+        android:id="@+id/btn_Home_goToSite"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_go_to_site"
+        android:textColor="@color/blue" />
+
+    <LinearLayout
+        android:id="@+id/lt_Home_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_Home_jokeSite"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_jokes_from_site"
+            android:textColor="@color/blue" />
+
+        <Button
+            android:id="@+id/btn_Home_jokeStorage"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_jokes_from_storage"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+
+</LinearLayout>

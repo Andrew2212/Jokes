@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- http://android-holo-colors.com/ -->
+    <color name="green">#9c0</color>
+    <color name="red">#c00</color>
+    <color name="white">#fff</color>
+    <color name="orange">#f80</color>
+    <color name="blue">#33b5e5</color>
+    <color name="black">#000000</color>
+    <color name="gray">#333333</color>
+
+</resources>

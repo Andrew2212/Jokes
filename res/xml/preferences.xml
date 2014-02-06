@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_font_size_value"
+        android:inputType="number"
+        android:key="@string/pref_font_size_key"
+        android:summary="@string/pref_font_size_summary"
+        android:title="@string/pref_font_size_title" />
+    <EditTextPreference
+        android:defaultValue="@string/pref_delta_value"
+        android:inputType="number"
+        android:key="@string/pref_delta_key"
+        android:summary="@string/pref_delta_summary"
+        android:title="@string/pref_delta_title" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_sound_key"
+        android:summaryOff="@string/pref_sound_summOff"
+        android:summaryOn="@string/pref_sound_summOn"
+        android:title="@string/pref_sound_title" />
+
+    <com.hqup.jokes.preferencers.ColorDialogPreference
+        android:key="@string/pref_color_key"
+        android:summary="@string/pref_color_summary"
+        android:title="@string/pref_color_title" />
+
+</PreferenceScreen>

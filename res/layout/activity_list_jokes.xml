@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lt_ListJokeBase"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".ListJokesActivity" >
+
+    <LinearLayout
+        android:id="@+id/lt_ListJokes_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_four" >
+
+        <TextView
+            android:id="@+id/tv_ListJokes_Title"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/screen_jokes_site"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_ListJokes"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:divider="@color/blue"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/lt_ListJokes_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_four" >
+
+        <Button
+            android:id="@+id/btn_ListJokes_Prev"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_page_prev"
+            android:textColor="@color/blue" />
+        
+                <Button
+            android:id="@+id/btn_ListJokes_Preferences"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_preferences"
+            android:textColor="@color/orange" />
+
+        <Button
+            android:id="@+id/btn_ListJokes_Next"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_page_next"
+            android:textColor="@color/blue" />
+
+    </LinearLayout>
+
+</LinearLayout>

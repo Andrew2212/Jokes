@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jokes</string>
+
+    <!-- Button -->
+    <string name="btn_yes">Да</string>
+    <string name="btn_no">Нет</string>
+    <string name="btn_jokes_from_site">с сайта</string>
+    <string name="btn_jokes_from_storage">из мешка</string>
+    <string name="btn_page_next">Next page</string>
+    <string name="btn_page_prev">Prev. page</string>
+    <string name="btn_go_to_site">Jokes www.semechki.tv</string>
+    <string name="btn_complain">Пожаловаться на Jokes</string>
+    <string name="btn_preferences">Настройки</string>
+
+    <!-- Context Menu Strings -->
+    <string name="menu_ctx_save_to_storage">Сохранить в мешок</string>
+    <string name="menu_ctx_delete_from_storage">Удалить из мешка</string>
+    <string name="menu_ctx_send_as_sms">Отправить как СМС</string>
+
+    <!-- Screen Strings -->
+    <string name="screen_home_greeting">Some new jokes every day!</string>
+    <string name="screen_jokes_storage">Мешок</string>
+    <string name="screen_jokes_site">Сайт стр. №</string>
+    <string name="textview_item_number">#12345</string>
+    <string name="textview_item_text">There might be some joke from parsed site</string>
+
+    <!-- Toast string -->
+    <string name="toast_connection_is_absent">Интернет соединение отсутствует!</string>
+    <string name="toast_storage_is_empty">Мешок пуст!</string>
+    <string name="toast_something_wrong">Something wrong has happened!</string>
+
+    <!-- Preferences -->
+    <!-- CheckBox -->
+    <string name="pref_sound_key">Sound key</string>
+    <string name="pref_sound_title">Звук</string>
+    <string name="pref_sound_summOn">Звук ВКЛ</string>
+    <string name="pref_sound_summOff">Звук ВЫКЛ</string>
+    <!--  -->
+    <string name="pref_toast_key">Toast key</string>
+    <string name="pref_toast_title">Toast</string>
+    <string name="pref_toast_summOn">Toast show ON</string>
+    <string name="pref_toast_summOff">Toast show OFF</string>
+    <!--  -->
+    <string name="pref_font_size_key">Size key</string>
+    <string name="pref_font_size_value">18</string>
+    <string name="pref_font_size_summary">Установить размер</string>
+    <string name="pref_font_size_title">Размер шрифта</string>
+    <!--  -->
+    <string name="pref_delta_key">Delta key</string>
+    <string name="pref_delta_value">1</string>
+    <string name="pref_delta_summary">Задать шаг</string>
+    <string name="pref_delta_title">Шаг перехода по страницам</string>
+    <!--  -->
+    <string name="pref_color_key">Color key</string>
+    <string name="pref_color_summary">Задать цвет</string>
+    <string name="pref_color_title">Цвет шрифта</string>
+
+    <!-- Dialog message string -->
+    <string name="dialog_msg_item_delete">Запись будет удалена</string>
+    <string name="dialog_msg_do_you_want_to_continue">Продолжим?</string>
+    <string name="dialog_msg_progress_bar_message">Let\&apos;s wait</string>
+
+    <!-- Content Descritions -->
+    <string name="ing_content_descripton">Content Description</string>
+
+</resources>

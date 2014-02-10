@@ -4,11 +4,10 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.jsoup.Connection;
-import org.jsoup.Connection.Response;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -34,7 +33,6 @@ public class Parser {
 	public static final String URL = "http://semechki.tv";
 	private static final String FILE_NAME = "tempPageFile";
 	private static final String DIR_NAME = "tempDir";
-	private static final String CHARSET_NAME = "UTF-8";
 	private static final String PATH_TO_PAGE = "/?page=";
 	private static final int PAGE_MAX_NUM = 999;
 
@@ -263,25 +261,42 @@ public class Parser {
 	private Document createDoc(String url) throws IOException {
 
 		/*
-		 * Try to save page to file and parse file to Document
+		 * Get Document from InputStream
 		 */
-		Connection connection = Jsoup.connect(url);
-		Response response = connection.execute();
-		String body = response.body();
-		Logger.time(timeStart, "response.body()");
+		java.net.URL newUrl = new java.net.URL(url);
+		InputStream is = newUrl.openStream();
+		Document doc = Jsoup.parse(new java.net.URL(url).openStream(), "UTF-8",
+				url);
+		is.close();
+		return doc;
+
+		/*
+		 * Get Connection to URL
+		 */
+		// org.jsoup.Connection connection = Jsoup.connect(url);
+
+		/*
+		 * Get Document from connection
+		 */
+		// return connection.get();
+
+		/*
+		 * Get Document from parsed HTML String
+		 */
+		// org.jsoup.Connection.Response response = connection.execute();
+		// String body = response.body();
+		// Logger.time(timeStart, "response.body()");
+		// return Jsoup.parse(body, "UTF-8");
 
 		/*
 		 * Get Document from parsed File (and before write string 'body' to
 		 * 'tempFile')
 		 */
+		// org.jsoup.Connection.Response response = connection.execute();
+		// String body = response.body();
 		// writeStringToFile(tempFile, body);
 		// Logger.time(timeStart, "writeStringToFile");
-		// return Jsoup.parse(tempFile, CHARSET_NAME);
-
-		/*
-		 * Get Document from parsed HTML String
-		 */
-		return Jsoup.parse(body, CHARSET_NAME);
+		// return Jsoup.parse(tempFile, "UTF-8");
 	}
 
 	// ==========Private Methods for parsingFromFile==================
